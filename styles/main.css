@@ -14,8 +14,12 @@ body {
     border: 3px solid steelblue;
     box-shadow: 5px 10px 8px 10px #888888;
 }
-h1, h1, h3, p, blockquote{
+h1, h2, h3, p, blockquote{
     margin-bottom: 12px;
+}
+h1 {
+    font-size: 200%;
+    margin-top: 30px;
 }
 header h2 {
     font-size: 300%;
@@ -30,7 +34,7 @@ header img {
 }
 
 h3 {
-    font-size: 150%;
+    font-size: 125%;
 }
 section a:link, section a:visited {
     color:maroon;
@@ -38,7 +42,9 @@ section a:link, section a:visited {
 section a:hover, section a:active {
     color:steelblue;
 }
-
+aside{
+    margin-left: 45px;
+}
 aside a:link, aside a:visited {
     color: steelblue;
 }
@@ -48,5 +54,8 @@ aside a:hover, aside a:active {
 }
 
 footer{
-
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 95%;
 }
