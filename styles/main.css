@@ -7,7 +7,6 @@ body {
     
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    padding: 0 1em;
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
@@ -21,12 +20,22 @@ h1 {
     font-size: 200%;
     margin-top: 30px;
 }
+header{
+    border-bottom: 3px solid steelblue;
+    background-image: linear-gradient(white, steelblue);
+}
 header h2 {
     font-size: 300%;
     font-style: italic;
     color: steelblue;
     text-shadow: 5px 5px 12px;
-   
+    
+    
+      
+
+}
+main {
+    padding: 0 1em;
 }
 header img {
     float: left;
@@ -54,8 +63,14 @@ aside a:hover, aside a:active {
 }
 
 footer{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    background-color: steelblue;
+    padding: 15px 0;
+    
+}
+footer p {
     text-align: center;
-    font-size: 95%;
+    font-size: 100%;
+    font-weight: bold;
+    color:white;
+    font-variant:small-caps;
 }
