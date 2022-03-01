@@ -39,7 +39,7 @@ header h2 {
 
 #logoimage {
     float: left;
-    margin-right: 15px;
+    padding: 10px 1.5em;
 }
  /*Horizontal inline navigation menu*
  
@@ -140,6 +140,7 @@ header h2 {
     background-color: lightsteelblue;
     padding: .5em 0 .5em .5em;
     color: black;
+    border-radius: 25px;
 }
 #nav_list ul li a:hover {
     color: white;
@@ -213,4 +214,44 @@ footer p {
     font-weight: bold;
     text-align: center;
     font-variant: small-caps;
+}
+#mobilemenu{
+    display: none;
+}
+
+/* Media Queries*/
+@media only screen and (max-width: 900px) {
+    body {
+        box-shadow: none;
+        font-size: 90%;
+    }
+    }
+@media only screen and (max-width: 767px) {
+    #nav_menu {
+        display: none;
+    }
+    #mobilemenu{
+        display: block;
+    }
+    .slicknav_menu{
+        background-color: steelblue !important;
+    }
+    header h2 {
+        font-size: 200%;
+    }
+    section, aside{
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        padding: .5em;
+    }
+    #logoimage {
+        float: none;
+        padding: .5em;
+        display: block;
+        margin: 0 auto;
+    }
+   header h2, header h3{
+        text-align: center;
+    }
 }

@@ -41,7 +41,7 @@ header h2 {
     float: left;
     margin-right: 15px;
 }
- /*Horizontal inline navigation menu*
+ /*Horizontal inline navigation menu*/
  
  #nav.menu{
      margin: 0;
@@ -74,11 +74,9 @@ header h2 {
  }
  #nav_menu ul li a:hover{
      color: red;
-
-
  }
  #nav_menu ul li:hover{
-    background-color: lightsteelblue;*/
+    background-color: lightsteelblue;
  }
  #nav_list h2 {
     margin-bottom: 5px;
