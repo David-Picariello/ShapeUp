@@ -22,13 +22,12 @@ body {
     background-color: white;
     box-shadow: 5px 10px 8px 10px #888888;
 }
-h3, p, blockquote {
+h1, h2, h3, p, blockquote {
     margin-bottom: 12px;
 }
 h1{
     font-family: 300%;
-    color: lightsteelblue;
-    text-align: center;
+    color: lightblue;
     margin: 10px 0 0;
     font-variant: small-caps;
     text-shadow: 1px 1px 2x #000000, -1px -1px 2px #000000, 1px -1px 2px #000000, -1px 1px 2px #000000;
@@ -43,73 +42,96 @@ header h2 {
     font-style: italic;
     color: steelblue;
     text-shadow: 5px 5px 12px;
-    padding: 15px 0 2px;
 }
-header a{
-    text-decoration: none;
-}
+
 
 #logoimage {
     float: left;
     padding: 10px 1.5em;
 }
- /*Horizontal Flexbox navigation menu*/
+ /*Horizontal inline navigation menu*
  
- 
- 
+ #nav.menu{
+     margin: 0;
 
-#nav_menu{
-    position: sticky;
-    top: 0;
+ }
+
+ #nav_menu ul{
+     list-style-type: none;
+     text-align: center;
+     border-top: 1px solid steelblue;
+     border-bottom: 1px solid steelblue;
+     background-color: steelblue;
+     padding: 10px 0;
+
+ }
+ #nav_menu ul li{
+    display: inline;
+    border-right: 2px solid black;
+    padding: 10px 3em;
+    
+ }
+ #nav_menu #last{
+     border-right: none;
+ }
+ #nav_menu ul li a{
+     font-weight: bold;
+     text-decoration: none;
+     color: white
+
+ }
+ #nav_menu ul li a:hover{
+     color: red;
+
+
+ }
+ #nav_menu ul li:hover{
+    background-color: lightsteelblue;*/
+ /*
+ #nav_menu {
+     border-bottom: 2px solid steelblue;
+     background-color: lightsteelblue;
+ }
+ #nav_menu ul {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     position: relative;
+ }
+ #nav_menu ul li {
+    float: left;
+    width: 20%;  
 }
-.container{
-    display:flex;
-    list-style: none;
-    background-color: steelblue;
-    position: relative;
-}
-.container li{
-    flex: 1;
-}
-.container li a {
+ #nav_menu ul li a{
     display: block;
-    padding: .75em 1em;
-    text-decoration: none;
-    color: white;
+    text-align: center;
+    padding: .7em 0;
+    background-color: steelblue;
     font-weight: bold;
-    transition: background-color .5s;
-}
-.container li a:hover {
-    color: black;
-    background-color: lightsteelblue;
-}
-
-/* flexbox nav menu second tier code */
-.container ul{
-    display: none;
-    background-color: steelblue;
-    width: 20%;
-    list-style: none;
-    position: absolute;
-    top: 100%;
-}
-
-.container ul li {
-    flex-direction: column;
-    
-}
-.container ul li a{
-    padding-left: 1em;
-    text-align: left;
-    width: 100%;
-    display: block;
-    
-}
-.container li:hover > ul{
-    display: block;
-}
-/* Vertical Nav List in Left Aside */
-#nav_list h2 {
+    color: white;
+    text-decoration: none;
+ }
+ #nav_menu ul ul {
+     display: none;
+     position: absolute;
+     top: 100%;
+     width: 100%;
+ }
+ #nav_menu ul ul li {
+     float: none;
+ }
+ #nav_menu ul li:hover > ul {
+     display: block;
+ }
+ #nav_menu > ul::after {
+     content: "";
+     clear: both;
+     display: block;
+ }
+ #nav_menu ul li a:hover, #nav_menu ul li a:focus {
+     background-color: lightsteelblue;
+ }
+ #nav_list h2 {
     margin-bottom: 5px;
     text-align: center;
 }
@@ -117,10 +139,9 @@ header a{
     list-style: none;
 }
 #nav_list ul li {
-    width: 100%;
-    margin: 0 auto .5em; /* 1st value top; middle value sides; 3rd value bottom */
-    
-}
+    width: 90%;
+    margin: 0 auto .5em; /* 1st value top; middle value sides; 3rd value bottom*/
+/*
 #nav_list ul li a {
     display: block;
     font-weight: bold;
@@ -129,44 +150,58 @@ header a{
     padding: .5em 0 .5em .5em;
     color: black;
     border-radius: 25px;
-    transition: all 1s; 
 }
 #nav_list ul li a:hover {
     color: white;
     background-color: steelblue;
-    padding: .5em 0 .5em 1.5em;
+}*/
+.container{
+    display:flex;
+    list-style: none;
+    background-color: steelblue;
 }
-
-
-
+.container li{
+    flex: 1;
+}
+.conatiner li a{
+    display: block;
+    padding: .75em 1em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.container ul{
+    display: none;
+}
+.container li a:hover{
+    color: black;
+    background-color: lightsteelblue;
+}
 main {
-    padding: 0 .3em;
+    padding: 0 1em;
     clear: both;
 }
 aside {
-    width: 28%;
-    margin: 0 auto;
-    padding: 10px .8em 0;
+    width: 30%;
+    padding-top: 10px;
 }
+
 section {
     width: 40%;
     float: left;
     padding-top: 10px;
-    
+    padding-right: 5px;
 }
 #leftaside {
     float: left;
 }
 #rightaside {
     float: right;
+    padding-left: 5px;
 }
 
 blockquote {
-    width: 80%;
-    margin: 1em auto;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 120%;
-    font-style: italic;
+    font-style: serif;
     padding: 1em;
     border-left: 3px solid steelblue;
     background-color: #eeeeee;
@@ -177,12 +212,6 @@ h3 {
 }
 aside a {
     text-decoration: none;
-}
-main h2 {
-    color: maroon;
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 130%;
 }
 section a:link, section a:visited {
     color: maroon;
@@ -197,13 +226,19 @@ aside a:link, aside a:visited {
 aside a:hover, aside a:active {
     color: maroon;
 }
-
+aside ul {
+    margin-left: 1em;
+}
+aside li {
+    font-weight: bold;
+    line-height: 130%;
+}
 
 footer {
     clear: both;
     background-color: steelblue;
     padding: 15px 0;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 footer p {
     color: white;
@@ -228,7 +263,6 @@ footer p {
         width: 70%;
         padding-left: 1em;
     }
-    
     }
 @media only screen and (max-width: 767px) {
     #nav_menu {
