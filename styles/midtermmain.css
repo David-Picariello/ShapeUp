@@ -130,7 +130,7 @@ header h2 {
  }
  #nav_menu ul li a:hover, #nav_menu ul li a:focus {
      background-color: lightsteelblue;
- }
+ }*/
  #nav_list h2 {
     margin-bottom: 5px;
     text-align: center;
@@ -141,7 +141,7 @@ header h2 {
 #nav_list ul li {
     width: 90%;
     margin: 0 auto .5em; /* 1st value top; middle value sides; 3rd value bottom*/
-/*
+}
 #nav_list ul li a {
     display: block;
     font-weight: bold;
@@ -155,6 +155,10 @@ header h2 {
     color: white;
     background-color: steelblue;
 }*/
+#nav_menu{
+    position: sticky;
+    top: 0;
+}
 .container{
     display:flex;
     list-style: none;

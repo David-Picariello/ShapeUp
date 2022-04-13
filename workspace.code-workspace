@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../CSC102"
+		},
+		{
+			"path": "../murach files.zip (Unzipped Files)"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "shapeup"
+	}
+}
